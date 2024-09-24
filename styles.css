@@ -1,0 +1,136 @@
+*{
+    margin: 0;  /*altera a margem*/
+    padding: 0; /*ajuste nas bordas*/
+    box-sizing:border-box ;/*modelo de caixa*/
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;/*modelo de fonte*/
+    line-height: 1.6;/*altura da linha*/
+    background-color: #f9f9f9; /*mudou a cor do fundo*/
+}
+
+nav{
+    position: fixed; /*fixo os botões*/
+    top: 0;/*espaçamento apartir do topo*/
+    width: 100%;/*largura*/
+    background-color: #3333338c; /*alguma cor;*/
+    padding: 20px 0;/*espaçamento vertical e orizontal*/
+
+}
+
+nav ul{
+    list-style-type: none;/*marcadores da lista*/
+    display: flex; /*organiza o conteudo orizontalmente*/
+    justify-content: center; /*alinhamento orizontal no centro*/
+}
+
+nav ul li{
+    margin: 0 20px; /*margem na orizontal*/
+}
+
+
+nav ul a {
+    color: white;/*mudou a cor dos botões*/
+    text-decoration: none;/*detalhes no titulo*/
+    font-size: 18px; /*mudou o temanho dos botões*/
+    padding: 10px;/*ajuste nas bordas*/
+    transition: color 0.3s;/*mudança de cor quando o mause passar por cima*/
+}
+
+nav ul li a:hover{
+    color: #2fffffbe;/*cor selecionada para a mudança*/
+}
+
+section:not(#home){
+    padding: 100px 20px;/*adicionou espaço entre as imagens e os paragrafos*/
+    text-align:center; /*deixou os textos no meio*/
+    display: flex;/*organiza o conteudo orizontalmente*/
+    justify-content: center;/*alinhamento orizontal no centro*/
+    align-items: center;/*alinhamento vertical*/
+    height: 100vh;/*altura da sessão*/
+}
+
+#home{
+    /*background-color:#4a90e2*/
+    background-image: url(https://catracalivre.com.br/wp-content/uploads/2021/11/chureito-pagoda-fujiyoshida-istock-519333796-dewpak-scaled.jpg); /*imagem do fundo no inicio*/
+    background-size:100% 99%;
+    /*cor do fundo*/
+    background-repeat: no-repeat;/*para nao repetir*/
+    color: rgb(0, 0, 0);/*alguma cor*/
+    height: 90vh; /*tamanho da imagem de inicio*/
+  /*ajustou a imagem no centro*/
+    display: flex; /*destaque no botão*/
+    flex-direction: column;/*organizou e, coluna*/
+    justify-content: center;/*frase no centro*/
+    align-items:left;/*alinhamento vertical*/
+    font-size: 1.5em;/*adiciona mais importancia a uma seção*/
+}
+#home p{
+    width: 30%;
+    font-size: 15px;
+    margin-left: 5%;
+
+}
+#home h1{
+margin-left: 5%;
+}
+
+.content{
+    display: flex;/*organiza o conteudo orizontalmente*/
+    flex-direction: row;/*?*/
+    align-items: center;/*alinhamento vertical*/
+    justify-content: center;/*alinhamento orizontal no centro*/
+}
+
+.content img {
+    width: 400px;/*largura da imagem*/
+    height: 300px;/*altura da imagem*/
+    object-fit: cover;/*para não perde a proporção da imagem*/
+    margin-right: 20px; /*margem da imagem*/
+    border-radius:8px;/*?*/
+}
+
+.content.text{
+    max-width: 600px;/*margem do texto*/
+    text-align: left;/*alinhamento do texto*/
+}
+
+.content.text h2{
+    font-size: 2em;/*?*/
+    margin-bottom: 20px;/*margem do botão*/
+    color: #333;/*cor do texto*/
+}
+
+.content.text p{
+    font-size: 1.1em;/*?*/
+    color: #555;/*cor do paragrafo*/
+}
+
+#services{
+    background-color: #79e6ee3a;/*plano de funfo de cada seção*/
+}
+
+#about{
+    background-color: #79e6ee3a;/*plano de funfo de cada seção*/
+
+}
+
+#contact{
+    background-color: #79e6ee3a;/*plano de funfo de cada seção*/
+}
+
+.cta-button {
+    margin-top: 30px;/*?*/
+    background-color: #01a6f3;/*cor do botão*/
+    color:rgb(0, 0, 0);/*cor do botão*/
+    padding: 5px 75px;/*ajuste nas bordas orizontal e vertical*/
+    font-size: 18px;/*?*/
+    border:none;/*?*/
+    border-radius:15px;/*?*/
+    cursor: pointer;/*configura o mause*/
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);/*sombras*/
+    transition: background-color 1s ease,transform 1s ease;/*?*/
+    width: 235px;/*altera as margens*/
+    margin-left: 55px;/*altera as margens*/
+}
